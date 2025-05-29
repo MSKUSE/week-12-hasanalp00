@@ -1,7 +1,7 @@
-public interface Stack {
+public interface Stack <T>{
 
-    void push(Object item);
-    Object pop () throws MyEmptyStackException;
+    void push(T item);
+    T pop () throws MyEmptyStackException;
     void peek();
     boolean isEmpty();
 

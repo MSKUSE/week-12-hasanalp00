@@ -1,24 +1,24 @@
-public class StackItem {
+public class StackItem<T> {
 
-    private Object data;
-    private StackItem next;
-    public StackItem(Object data) {
+    private T data;
+    private StackItem<T> next;
+    public StackItem(T data) {
         this.data = data;
     }
 
-    public Object getData() {
+    public T getData() {
         return data;
     }
 
-    public void setData(Object data) {
+    public void setData(T data) {
         this.data = data;
     }
 
-    public StackItem getNext() {
+    public StackItem<T> getNext() {
         return next;
     }
 
-    public void setNext(StackItem next) {
+    public void setNext(StackItem<T> next) {
         this.next = next;
     }
 }

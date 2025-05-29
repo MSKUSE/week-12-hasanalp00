@@ -1,16 +1,16 @@
 import java.util.ArrayList;
-public class StackArray implements Stack{
+public class StackArray <T> implements Stack<T>{
 
 
-    private  ArrayList<Object> stack =
+    private  ArrayList<T> stack =
             new ArrayList<>();
 
     @Override
-    public void push(Object item) {
+    public void push(T item) {
         stack.add(0,item);
     }
     @Override
-    public Object pop() throws MyEmptyStackException{
+    public T pop() throws MyEmptyStackException{
         if(this.isEmpty()){
             throw new MyEmptyStackException("the stack is empty-- you cant pop");
         }
@@ -25,5 +25,12 @@ public class StackArray implements Stack{
     @Override
     public boolean isEmpty() {
         return stack.size() == 0;
+    }
+
+    @Override
+    public String toString() {
+        return "StackArray{" +
+                "stack=" + stack +
+                '}';
     }
 }

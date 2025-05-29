@@ -7,7 +7,15 @@ import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
+        StackLinkedList<Number> stack=new StackLinkedList<>();
+        stack.push(12);
+        stack.push(13);
+        stack.push(12.1);
+        stack.peek();
+        stack.displayStack();
 
+
+        /*
         StackLinkedList stack=new StackLinkedList();
         try {
             stack.pop();
@@ -25,7 +33,7 @@ public class Main {
         System.out.println(grades.keySet() instanceof Set);
         System.out.println(grades.keySet() instanceof Object);
         System.out.println(grades.getClass());
-
+        */
         /*
         Stack stack = new StackLinkedList();
         stack.push("This is a string");
